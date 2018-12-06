@@ -1,3 +1,6 @@
+# email reminder leverage google SMTP and sends email to user if 
+# trash can is full
+
 import ConfigParser, inspect, os
 import smtplib
 from email.mime.multipart import MIMEMultipart

@@ -1,3 +1,8 @@
+# detection.py includes functions of front Ultrasonic sensor detection and 
+# inside IR sensors detection
+# front_detect gets object distance and decide whether open trash can lid or not
+# inside_detect gets IR sensors status and return trash can status
+
 from hc_sr04 import *
 from StdServo import *
 import time
@@ -5,7 +10,6 @@ from HCI import *
 
 def front_detect( FRONT_TRIGGER, FRONT_ECHO, IsOpen ):
 		distance = get_distance( FRONT_TRIGGER, FRONT_ECHO, 70 )
-		#print distance
 		if distance <= 50 and IsOpen[0] == False:
 			lid_open( 5 )
 			IsOpen[0] = True
@@ -15,7 +19,6 @@ def front_detect( FRONT_TRIGGER, FRONT_ECHO, IsOpen ):
 		elif distance > 50 and IsOpen[0] == False:
 			lid_close( 5 )
 			IsOpen[0] = False
-		#time.sleep(0.5)
 
 def inside_detect( IR_SENSOR_0, IR_SENSOR_1, IR_SENSOR_2, IR_SENSOR_3 ):
 	IR_SENSOR_0_status = GPIO.input( IR_SENSOR_0 )

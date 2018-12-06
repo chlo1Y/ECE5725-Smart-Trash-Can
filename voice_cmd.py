@@ -1,3 +1,7 @@
+# this is voice commad reading module
+# read from voice recognition output 
+# and decide open trash can or not
+
 from StdServo import *
 import time 
 import RPi.GPIO as GPIO

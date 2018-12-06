@@ -1,3 +1,5 @@
+# this is stdard servo function module
+
 import RPi.GPIO as GPIO
 import time
 

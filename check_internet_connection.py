@@ -1,3 +1,6 @@
+# this is internet connection checking module
+# return True if is connected to internet
+
 import urllib2
 import time
 

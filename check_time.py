@@ -1,3 +1,6 @@
+# check_time funciton is for real time checking, if current hour and minute 
+# are target hour and minute, return True
+
 import datetime
 import time
 

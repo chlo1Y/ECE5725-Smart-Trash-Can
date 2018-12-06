@@ -1,3 +1,5 @@
+# HC_SR04 ultrasonic sensor function module
+
 import RPi.GPIO as GPIO
 import time
 

@@ -1,3 +1,7 @@
+# this is human computer interface module of our program
+# draw reads status from inside_detect and draw on PiTFT 
+# accordingly
+
 import pygame # Import pygame graphics library
 import os # for OS calls
 import time
